@@ -1,0 +1,109 @@
+//Variables (MONOCHROME)
+$colorbase: #699;
+$color-background: lighten($colorbase, 20);
+$color-dark: darken($colorbase, 20);
+$color-accent: saturate($colorbase, 20);
+$color-highlight: lighten(saturate($colorbase, 20), 20);
+
+//Variables (ANALOGOUS)
+$color-analogous-base: #966;
+$color-analogous-background: lighten($color-analogous-base, 20);
+$color-analogous-dark: darken($color-analogous-base, 20);
+$color-analogous-accent: saturate(adjust-color($color-analogous-base, $hue:30), 20);
+$color-analogous-highlight: lighten(saturate(adjust-color($color-analogous-base, $hue:330), 40), 20);
+
+
+//Variables (COMPLEMENTARY)
+$color-complementary-base: #969;
+$color-complementary-background: lighten($color-complementary-base, 20);
+$color-complementary-dark: darken($color-complementary-base, 20);
+$color-complementary-accent: saturate(adjust-color($color-complementary-base, $hue:180), 20);
+$color-complementary-highlight: lighten(saturate(adjust-color($color-complementary-base, $hue:180), 40), 20);
+
+//Monocrhome Styles
+
+#monochrome {
+    .chip {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid #000000;
+        display: inline-block;
+        background: $colorbase;
+    &:nth-of-type(2){
+            background: $color-background;
+        }//End of nth (2)
+        
+    &:nth-of-type(3){
+            background: $color-dark;
+        }//End of nth (3)
+        
+    &:nth-of-type(4){
+            background: $color-accent;
+        }//End of nth (4)
+        
+    &:nth-of-type(5){
+            background: $color-highlight;
+        }//End of nth (5)
+    }//End of CHIP
+    
+}//END MONOCHROME
+
+
+
+//Analogous Styles
+
+#analogous {
+    .chip {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid #000000;
+        display: inline-block;
+        background: $color-analogous-base;
+    &:nth-of-type(2){
+            background: $color-analogous-background;
+        }//End of nth (2)
+        
+    &:nth-of-type(3){
+            background: $color-analogous-dark;
+        }//End of nth (3)
+        
+    &:nth-of-type(4){
+            background: $color-analogous-accent;
+        }//End of nth (4)
+        
+    &:nth-of-type(5){
+            background: $color-analogous-highlight;
+        }//End of nth (5)
+    }//End of CHIP
+    
+}//END ANALOGOUS
+
+
+
+//COMPLEMENTARY Styles
+
+#complementary {
+    .chip {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid #000000;
+        display: inline-block;
+        background: $color-complementary-base;
+    &:nth-of-type(2){
+            background: $color-complementary-background;
+        }//End of nth (2)
+        
+    &:nth-of-type(3){
+            background: $color-complementary-dark;
+        }//End of nth (3)
+        
+    &:nth-of-type(4){
+            background: $color-complementary-accent;
+        }//End of nth (4)
+        
+    &:nth-of-type(5){
+            background: $color-complementary-highlight;
+        }//End of nth (5)
+    }//End of CHIP
+    
+}//END COMPLEMENTARY 

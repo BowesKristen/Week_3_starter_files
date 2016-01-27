@@ -1,0 +1,46 @@
+#monochrome .chip {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #000000;
+  display: inline-block;
+  background: #699; }
+  #monochrome .chip:nth-of-type(2) {
+    background: #a3c2c2; }
+  #monochrome .chip:nth-of-type(3) {
+    background: #3d5c5c; }
+  #monochrome .chip:nth-of-type(4) {
+    background: #4db3b3; }
+  #monochrome .chip:nth-of-type(5) {
+    background: #94d1d1; }
+
+#analogous .chip {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #000000;
+  display: inline-block;
+  background: #966; }
+  #analogous .chip:nth-of-type(2) {
+    background: #c2a3a3; }
+  #analogous .chip:nth-of-type(3) {
+    background: #5c3d3d; }
+  #analogous .chip:nth-of-type(4) {
+    background: #b3804d; }
+  #analogous .chip:nth-of-type(5) {
+    background: #e085b3; }
+
+#complementary .chip {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #000000;
+  display: inline-block;
+  background: #969; }
+  #complementary .chip:nth-of-type(2) {
+    background: #c2a3c2; }
+  #complementary .chip:nth-of-type(3) {
+    background: #5c3d5c; }
+  #complementary .chip:nth-of-type(4) {
+    background: #4db34d; }
+  #complementary .chip:nth-of-type(5) {
+    background: #85e085; }
+
+/*# sourceMappingURL=style.css.map */
